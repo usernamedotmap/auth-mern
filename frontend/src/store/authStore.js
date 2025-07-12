@@ -2,7 +2,7 @@ import { create } from "zustand";
 import axios from "axios";
 import toast from "react-hot-toast";
 
-const API_URL = "http://localhost:8000/api/auth";
+const API_URL = "https://auth-server-mern.onrender.com/api/auth";
 axios.defaults.withCredentials = true;
 export const useAuthStore = create((set) => ({
   user: null,
