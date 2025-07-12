@@ -190,7 +190,7 @@ export const forgtoPassword = async (req, res) => {
 
     await sendPasswordResetEmail(
       user.email,
-      `http://localhost:5173/reset-password/${resetToken}`
+      `https://auth-server-mern.onrender.com/reset-password/${resetToken}`
     );
 
     res.status(200).json({
